@@ -1,4 +1,4 @@
 #!/bin/env bash
-
 # Sends a post request with one lead as payload
+
 curl  -sX POST -d "{\"name\": \"$1\", \"email\":\"$2\", \"message\":\"$3\"}" -H "Content-Type: application/json" http://localhost:8000/api/leads/ | python -m json.tool

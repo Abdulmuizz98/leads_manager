@@ -1,5 +1,5 @@
 #!/bin/env bash
-
 # Gets all leads from the api url
+
 #curl -o response.json http://localhost:8000/api/leads/ && python -m json.tool response.json
 curl -s  "http://localhost:8000/api/leads/" | python -m json.tool
